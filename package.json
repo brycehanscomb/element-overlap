@@ -1,0 +1,60 @@
+{
+  "name": "element-overlap",
+  "version": "0.0.6",
+  "description": "Trigger a callback when two DOM elements overlap",
+  "main": "lib/index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "test"
+  },
+  "author": "Bryce Hanscomb <bryce@brycehanscomb.com>",
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0"
+    ],
+    "plugins": [
+      "transform-runtime"
+    ]
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": "airbnb/base"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.6.1",
+    "is-string": "^1.0.4",
+    "mezr": "^0.4.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-core": "^6.7.4",
+    "babel-eslint": "^6.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.6.5",
+    "babel-plugin-transform-runtime": "^6.6.0",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-register": "^6.7.2",
+    "babelify": "^7.2.0",
+    "browserify": "^13.0.0",
+    "chai": "^3.5.0",
+    "eslint": "^2.5.3",
+    "eslint-config-airbnb": "6.2.0",
+    "eslint-plugin-react": "^4.2.3",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "mocha": "^2.4.5",
+    "rimraf": "^2.5.2",
+    "sinon": "^2.0.0-pre",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "scripts": {
+    "lint": "eslint src test",
+    "test": "mocha test --compilers js:babel-register",
+    "build": "rimraf lib && babel src --out-dir lib",
+    "publish": "rimraf lib && npm run build",
+    "start": "easystatic start docs"
+  }
+}
