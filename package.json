@@ -1,6 +1,6 @@
 {
   "name": "element-overlap",
-  "version": "0.0.6",
+  "version": "1.0.0",
   "description": "Trigger a callback when two DOM elements overlap",
   "main": "lib/index.js",
   "directories": {
