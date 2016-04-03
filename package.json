@@ -1,11 +1,19 @@
 {
   "name": "element-overlap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Trigger a callback when two DOM elements overlap",
   "main": "lib/index.js",
   "directories": {
     "doc": "docs",
     "test": "test"
+  },
+  "keywords": "DOM, elements, collision, collide, overlap, overlapping",
+  "bugs": {
+    "url: "https://github.com/brycehanscomb/element-overlap/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brycehanscomb/element-overlap.git"
   },
   "author": "Bryce Hanscomb <bryce@brycehanscomb.com>",
   "license": "MIT",
